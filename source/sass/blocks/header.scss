@@ -1,0 +1,23 @@
+.header {
+  background-color: #893fd2;
+
+  &__profession {
+    text-transform: lowercase;
+    text-align: center;
+  }
+
+  &__container {
+    display: grid;
+    row-gap: 32px;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: white;
+
+    @media (min-width:$min-width-tablet) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}

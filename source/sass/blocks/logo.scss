@@ -1,0 +1,17 @@
+.logo {
+  display: grid;
+  row-gap: 8px;
+  justify-content: center;
+  @include reset-link;
+
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px;
+    // line-height: 120%;
+  }
+
+  &__slogan {
+    text-transform: lowercase;
+  }
+}
