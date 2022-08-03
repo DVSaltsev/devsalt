@@ -46,7 +46,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
-  line-height: 120%;
+  line-height: 1.2;
   color: #000000;
   min-width: 320px; }
 
@@ -58,3 +58,50 @@
   align-content: start;
   min-height: 100vh;
   background-color: #FFFFFF; }
+
+.header {
+  background-color: #893fd2; }
+  .header__profession {
+    text-transform: lowercase;
+    text-align: center; }
+  .header__container {
+    display: grid;
+    row-gap: 32px;
+    justify-content: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: white; }
+    @media (min-width: 768px) {
+      .header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+
+.logo {
+  display: grid;
+  row-gap: 8px;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none; }
+  .logo__title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 32px; }
+  .logo__slogan {
+    text-transform: lowercase; }
+
+.contacts {
+  display: grid;
+  row-gap: 8px; }
+  .contacts__link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .contacts__socials-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -moz-column-gap: 16px;
+         column-gap: 16px; }
