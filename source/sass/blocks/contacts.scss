@@ -1,6 +1,6 @@
 .contacts {
   display: grid;
-  row-gap: 8px;
+  row-gap: 8*$px;
 
   &__link {
     @include reset-link;
@@ -15,6 +15,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: 16px;
+    column-gap: 16*$px;
   }
 }

@@ -1,0 +1,62 @@
+.about {
+  // display: none;
+  background-color: $violet-60;
+  border-bottom: 1px solid red;
+
+  .about__container {
+    display: grid;
+    row-gap: 16*$px;
+    padding-top: 16*$px;
+    padding-bottom: 16*$px;
+
+    @media (min-width: ($min-width-tablet)) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 16*$px;
+    }
+  }
+
+  &__wrapper-text {
+    text-align: center;
+    display: grid;
+    row-gap: 8*$px
+  }
+
+  &__text {
+    @media (min-width: ($min-width-tablet)) {
+      border-radius: 10*$px;
+    }
+
+  }
+
+  &__wrapper-biography {
+    @media (min-width: ($min-width-tablet)) {
+      order: -1;
+    }
+  }
+
+  &__title {
+    @include reset-p;
+    font-size: 18*$px;
+  }
+
+  &__wrapper-img {}
+
+  &__avatar {
+    @include reset-img;
+
+    @media (min-width: ($min-width-tablet)) {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10*$px;
+    }
+  }
+
+  &__text {
+    @include reset-p;
+    background-color: $white;
+    padding: 8*$px;
+  }
+
+  &__biography {}
+}

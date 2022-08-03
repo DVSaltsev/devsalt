@@ -2,10 +2,18 @@
   font-family: "Lexend", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.2;
   color: $black;
   min-width: $min-width-mobile;
+
+  @media (min-width:$min-width-tablet) {
+    font-size: 16px;
+  }
+
+  @media (min-width:$min-width-desktop) {
+    font-size: 18px;
+  }
 }
 
 .page__body {

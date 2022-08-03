@@ -1,5 +1,5 @@
 .header {
-  background-color: #893fd2;
+  background-color: $violet-100;
 
   &__profession {
     text-transform: lowercase;
@@ -8,10 +8,10 @@
 
   &__container {
     display: grid;
-    row-gap: 32px;
+    row-gap: 8*$px;
     justify-content: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 8*$px;
+    padding-bottom: 8*$px;
     color: white;
 
     @media (min-width:$min-width-tablet) {
