@@ -35,10 +35,10 @@
   list-style: none;
 }
 
-@mixin reset-p {
-  margin: 0;
+@mixin reset-p-h {
+  margin-top: 0;
+  margin-bottom: 0;
 }
-
 
 @mixin reset-select {
   -moz-appearance: none;

@@ -1,0 +1,12 @@
+.portfolio {
+  border-top: 3px solid $violet-70;
+  // border-bottom: 1px solid #678fa8;
+  background-color: $violet-60;
+
+  &__title {
+    @include reset-p-h;
+  }
+
+  ;
+
+}

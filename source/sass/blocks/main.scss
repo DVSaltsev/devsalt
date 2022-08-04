@@ -1,9 +1,10 @@
 .main {
-  display: grid;
+  // display: grid;
   // grid-template-rows: 1fr 2fr;
   color: $violet-140;
+  background-color: $violet-60;
 
   @media (min-width: ($min-width-tablet)) {
-    display: block;
+    // grid-template-rows: 1fr 1fr;
   }
 }
