@@ -1,8 +1,8 @@
 .main {
   // display: grid;
   // grid-template-rows: 1fr 2fr;
-  color: $violet-140;
-  background-color: $violet-60;
+
+  background-color: $grey-70;
 
   @media (min-width: ($min-width-tablet)) {
     // grid-template-rows: 1fr 1fr;

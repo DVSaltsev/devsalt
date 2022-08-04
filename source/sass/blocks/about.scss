@@ -1,7 +1,7 @@
 .about {
   // display: none;
-  background-color: $violet-60;
-  border-bottom: 3px solid $violet-80;
+  // background-color: $violet-60;
+  border-bottom: 3px solid $grey-75;
 
   .about__container {
     display: grid;
@@ -11,7 +11,7 @@
 
     @media (min-width: ($min-width-tablet)) {
       display: grid;
-      grid-template-columns: 1.5fr 1fr 1.5fr;
+      grid-template-columns: 1.1fr 1fr 1.1fr;
       column-gap: 16*$px;
     }
   }

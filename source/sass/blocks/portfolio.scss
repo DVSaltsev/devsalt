@@ -1,12 +1,31 @@
 .portfolio {
-  border-top: 3px solid $violet-70;
-  // border-bottom: 1px solid #678fa8;
-  background-color: $violet-60;
+  border-top: 3px solid $grey-65;
+  // background-color: $violet-60;
+
+  &__container {
+    display: grid;
+    row-gap: 16*$px;
+    padding-top: 16*$px;
+    padding-bottom: 16*$px;
+  }
 
   &__title {
     @include reset-p-h;
+    text-align: center;
   }
 
-  ;
+  &__wrapper-projects {
+    @media (min-width:$min-width-tablet) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 16*$px;
+      row-gap: 16*$px;
+    }
+
+    @media (min-width:$min-width-desktop) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
 
 }

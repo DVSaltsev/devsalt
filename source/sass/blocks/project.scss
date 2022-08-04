@@ -1,0 +1,54 @@
+.project {
+  display: grid;
+  row-gap: 4*$px;
+  padding-top: 16*$px;
+  padding-bottom: 16*$px;
+  // background-color: $white;
+
+  @media (min-width:$min-width-tablet) {
+    column-gap: 8*$px;
+    grid-template-rows: 76% 1fr;
+    padding-top: 0*$px;
+    padding-bottom: 0*$px;
+
+  }
+
+  &__link {
+    @media (min-width:$min-width-tablet) {}
+  }
+
+  &__img {
+    @include reset-img;
+
+    // height: 100%;
+    @media (min-width:$min-width-tablet) {
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      // object-fit: ;
+      border-top-left-radius: 14*$px;
+      border-top-right-radius: 14*$px;
+    }
+  }
+
+  &__wrapper-text {
+    @media (min-width:$min-width-tablet) {
+      background-color: $white;
+      display: grid;
+      row-gap: 4*$px;
+      padding: 4*$px;
+      border-bottom-left-radius: 14*$px;
+      border-bottom-right-radius: 14*$px;
+    }
+  }
+
+  &__title {
+    @include reset-p-h;
+    text-align: center;
+  }
+
+  &__text {
+    @include reset-p-h;
+    text-align: center;
+  }
+}
