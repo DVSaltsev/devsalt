@@ -1,4 +1,40 @@
 .footer {
-  height: 90px;
   background-color: $violet-100;
+  color: $white;
+
+  &__container {
+    padding-top: 16*$px;
+    padding-bottom: 16*$px;
+
+  }
+
+  &__principles {
+    @include reset-list;
+    text-align: center;
+    display: grid;
+    row-gap: 4*$px;
+
+    @media (min-width: ($min-width-tablet)) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      column-gap: 8*$px;
+      row-gap: 4*$px;
+      padding-right: 64*$px;
+      padding-left: 64*$px;
+    }
+  }
+
+  &__principle {}
+
+  &__principle:nth-of-type(even) {
+    @media (min-width: ($min-width-tablet)) {
+      padding-top: 16px;
+    }
+  }
+
+  &__text {
+    text-shadow: 2px 2px 2px $grey-120;
+  }
 }
