@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Lexend";
+  font-family: "BalsamiqSans";
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Lexend-Regular.woff") format("woff"), url("../fonts/Lexend-Regular.woff2") format("woff2"); }
+  src: url("../fonts/BalsamiqSans-Regular.woff2") format("woff2"); }
 
 @font-face {
-  font-family: "Lexend";
+  font-family: "BalsamiqSans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("../fonts/Lexend-Bold.woff") format("woff"), url("../fonts/Lexend-Bold.woff2") format("woff2"); }
+  src: url("../fonts/BalsamiqSans-Bold.woff2") format("woff2"); }
 
 .visually-hidden {
   position: absolute;
@@ -26,23 +26,23 @@
   overflow: hidden; }
 
 .container {
-  max-width: 704px;
+  max-width: 720px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px; }
   @media (min-width: 768px) {
     .container {
-      max-width: 1200px;
+      max-width: 1104px;
+      padding-right: 24px;
+      padding-left: 24px; } }
+  @media (min-width: 1168px) {
+    .container {
       padding-right: 32px;
       padding-left: 32px; } }
-  @media (min-width: 1296px) {
-    .container {
-      padding-right: 48px;
-      padding-left: 48px; } }
 
 .page {
-  font-family: "Lexend", sans-serif;
+  font-family: "BalsamiqSans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -52,7 +52,7 @@
   @media (min-width: 768px) {
     .page {
       font-size: 16px; } }
-  @media (min-width: 1296px) {
+  @media (min-width: 1168px) {
     .page {
       font-size: 18px; } }
 
@@ -66,7 +66,8 @@
   background-color: #FFFFFF; }
 
 .header {
-  background-color: #521a8b; }
+  background-color: #521a8b;
+  text-shadow: 3px 3px 2px #000000; }
   .header__profession {
     text-transform: lowercase;
     text-align: center; }
@@ -92,7 +93,8 @@
   .logo__title {
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.71429rem; }
+    font-size: 1.71429rem;
+    font-weight: 700; }
   .logo__slogan {
     text-transform: lowercase; }
 
@@ -105,6 +107,11 @@
     display: flex;
     align-items: center;
     justify-content: center; }
+  .contacts__icons {
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px #000000;
+    width: 1.71429rem;
+    height: 1.71429rem; }
   .contacts__socials-wrapper {
     display: flex;
     justify-content: center;
@@ -117,13 +124,13 @@
 
 .about {
   border-bottom: 3px solid #cac4cd; }
-  .about .about__container {
+  .about__container {
     display: grid;
     row-gap: 1.14286rem;
     padding-top: 1.14286rem;
     padding-bottom: 1.14286rem; }
     @media (min-width: 768px) {
-      .about .about__container {
+      .about__container {
         display: grid;
         grid-template-columns: 1.1fr 1fr 1.1fr;
         -moz-column-gap: 1.14286rem;
@@ -146,7 +153,8 @@
   .about__title {
     margin-top: 0;
     margin-bottom: 0;
-    font-size: 1.28571rem; }
+    font-size: 1.28571rem;
+    font-weight: 700; }
   .about__avatar {
     display: block;
     width: 100%;
@@ -173,7 +181,9 @@
   .portfolio__title {
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center; }
+    text-align: center;
+    font-size: 1.28571rem;
+    font-weight: 700; }
   @media (min-width: 768px) {
     .portfolio__wrapper-projects {
       display: grid;
@@ -181,7 +191,7 @@
       -moz-column-gap: 1.14286rem;
            column-gap: 1.14286rem;
       row-gap: 1.14286rem; } }
-  @media (min-width: 1296px) {
+  @media (min-width: 1168px) {
     .portfolio__wrapper-projects {
       grid-template-columns: 1fr 1fr 1fr; } }
 
@@ -248,11 +258,12 @@
         flex-wrap: wrap;
         -moz-column-gap: 0.57143rem;
              column-gap: 0.57143rem;
-        row-gap: 0.28571rem;
-        padding-right: 4.57143rem;
-        padding-left: 4.57143rem; } }
+        row-gap: 0.28571rem; } }
   @media (min-width: 768px) {
-    .footer__principle:nth-of-type(even) {
-      padding-top: 16px; } }
+    .footer__principle:nth-child(even) {
+      padding-top: 8px; } }
+  @media (min-width: 768px) {
+    .footer__principle:nth-child(odd) {
+      padding-bottom: 8px; } }
   .footer__text {
-    text-shadow: 2px 2px 2px #767676; }
+    text-shadow: 3px 3px 2px #000000; }
