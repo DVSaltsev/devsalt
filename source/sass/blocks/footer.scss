@@ -5,7 +5,6 @@
   &__container {
     padding-top: 16*$px;
     padding-bottom: 16*$px;
-
   }
 
   &__principles {
@@ -14,27 +13,29 @@
     display: grid;
     row-gap: 4*$px;
 
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       display: flex;
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
       column-gap: 8*$px;
       row-gap: 4*$px;
-      padding-right: 64*$px;
-      padding-left: 64*$px;
     }
   }
 
-  &__principle {}
+  &__principle:nth-child(even) {
+    @media ($tablet) {
+      padding-top: 8px;
+    }
+  }
 
-  &__principle:nth-of-type(even) {
-    @media (min-width: ($min-width-tablet)) {
-      padding-top: 16px;
+  &__principle:nth-child(odd) {
+    @media ($tablet) {
+      padding-bottom: 8px;
     }
   }
 
   &__text {
-    text-shadow: 2px 2px 2px $grey-120;
+    text-shadow: 3px 3px 2px $black;
   }
 }

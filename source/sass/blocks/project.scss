@@ -1,28 +1,43 @@
 .project {
   display: grid;
-  row-gap: 4*$px;
+  row-gap: 8*$px;
   padding-top: 16*$px;
   padding-bottom: 16*$px;
   // background-color: $white;
 
-  @media (min-width:$min-width-tablet) {
+  @media ($tablet) {
     column-gap: 8*$px;
-    grid-template-rows: 76% 1fr;
+    // grid-template-rows: 76% 1fr;
     padding-top: 0*$px;
     padding-bottom: 0*$px;
+  }
+
+  &__wrapper-bottom {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 8*$px;
+    background-color: $white;
+    padding: 8*$px;
+    border-bottom-left-radius: 14*$px;
+    border-bottom-right-radius: 14*$px;
 
   }
 
   &__link {
-    @media (min-width:$min-width-tablet) {}
+    @include reset-btn-link;
+    background-color: $violet-100;
+    color: $white;
+    border-radius: 5*$px;
+    padding: 2*$px 6*$px;
+    box-shadow: 2px 2px 2px $black;
   }
 
   &__img {
     @include reset-img;
 
     // height: 100%;
-    @media (min-width:$min-width-tablet) {
-      height: 100%;
+    @media ($tablet) {
+      height: auto;
       object-fit: cover;
       object-position: top;
       // object-fit: ;
@@ -31,20 +46,11 @@
     }
   }
 
-  &__wrapper-text {
-    @media (min-width:$min-width-tablet) {
-      background-color: $white;
-      display: grid;
-      row-gap: 4*$px;
-      padding: 4*$px;
-      border-bottom-left-radius: 14*$px;
-      border-bottom-right-radius: 14*$px;
-    }
-  }
-
   &__title {
     @include reset-p-h;
     text-align: center;
+    display: flex;
+    align-items: center
   }
 
   &__text {

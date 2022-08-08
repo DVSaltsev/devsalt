@@ -1,5 +1,6 @@
 .header {
   background-color: $violet-100;
+  text-shadow: 3px 3px 2px $black;
 
   &__profession {
     text-transform: lowercase;
@@ -10,11 +11,11 @@
     display: grid;
     row-gap: 8*$px;
     justify-content: center;
-    padding-top: 8*$px;
-    padding-bottom: 8*$px;
+    padding-top: 16*$px;
+    padding-bottom: 16*$px;
     color: white;
 
-    @media (min-width:$min-width-tablet) {
+    @media ($tablet) {
       display: flex;
       justify-content: space-between;
       align-items: center;

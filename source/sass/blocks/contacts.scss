@@ -9,7 +9,12 @@
     justify-content: center;
   }
 
-
+  &__icons {
+    border-radius: 50%;
+    box-shadow: 3px 3px 2px $black;
+    width: 24*$px;
+    height: 24*$px;
+  }
 
   &__socials-wrapper {
     display: flex;

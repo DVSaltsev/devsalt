@@ -3,13 +3,13 @@
   // background-color: $violet-60;
   border-bottom: 3px solid $grey-75;
 
-  .about__container {
+  &__container {
     display: grid;
     row-gap: 16*$px;
     padding-top: 16*$px;
     padding-bottom: 16*$px;
 
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       display: grid;
       grid-template-columns: 1.1fr 1fr 1.1fr;
       column-gap: 16*$px;
@@ -21,22 +21,21 @@
     display: grid;
     row-gap: 8*$px;
 
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       display: flex;
       flex-direction: column;
       justify-content: center;
     }
-
   }
 
   &__text {
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       border-radius: 10*$px;
     }
   }
 
   &__wrapper-biography {
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       order: -1;
     }
   }
@@ -44,13 +43,14 @@
   &__title {
     @include reset-p-h;
     font-size: 18*$px;
+    font-weight: 700;
   }
 
 
   &__avatar {
     @include reset-img;
 
-    @media (min-width: ($min-width-tablet)) {
+    @media ($tablet) {
       height: 100%;
       object-fit: cover;
       border-radius: 10*$px;

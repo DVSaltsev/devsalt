@@ -12,17 +12,20 @@
   &__title {
     @include reset-p-h;
     text-align: center;
+    font-size: 18*$px;
+    font-weight: 700;
   }
 
   &__wrapper-projects {
-    @media (min-width:$min-width-tablet) {
+    @media ($tablet) {
       display: grid;
       grid-template-columns: 1fr 1fr;
       column-gap: 16*$px;
       row-gap: 16*$px;
+
     }
 
-    @media (min-width:$min-width-desktop) {
+    @media ($desktop) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }

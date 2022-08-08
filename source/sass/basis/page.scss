@@ -1,17 +1,19 @@
 .page {
-  font-family: "Lexend", sans-serif;
+  font-family: "BalsamiqSans", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.2;
   color: $black;
   min-width: $min-width-mobile;
+  // $mobile: "min-width:320px";
 
-  @media (min-width:$min-width-tablet) {
+  @media ($tablet) {
     font-size: 16px;
   }
 
-  @media (min-width:$min-width-desktop) {
+  // @media (min-width:$min-width-desktop) {
+  @media ($desktop) {
     font-size: 18px;
   }
 }

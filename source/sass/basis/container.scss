@@ -1,18 +1,18 @@
 .container {
-  max-width: 704px;
+  max-width: 720px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 16px;
   padding-left: 16px;
 
-  @media (min-width: ($min-width-tablet)) {
-    max-width: 1200px;
-    padding-right: 32px;
-    padding-left: 32px;
+  @media ($tablet) {
+    max-width: 1104px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
-  @media (min-width: ($min-width-desktop)) {
-    padding-right: 48px;
-    padding-left: 48px;
+  @media ($desktop) {
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
